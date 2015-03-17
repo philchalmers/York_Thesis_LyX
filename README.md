@@ -10,26 +10,26 @@ To use this package you'll need to meet the following requirements:
 
 ### Requirements: 
 
-1) Install [LyX](http://www.lyx.org/), and (optionally) install the version
-   of Jabref that comes with it
-2) Install [R](http://www.r-project.org/) and the `'knitr'` package 
-3) (Mac and Linux) Install the `york-thesis` class (if it wasn't shipped with
-   the TeX manager in step 1) through TeX-live or whatever system you are using
-4) (Optional) Obtain a decent `.bib` manager. You could just use
-   a text editor but a dedicated .bib manager is much nicer. If you chose to
-   install Jabref when installing LyX, it has support to push references 
-   directly to LyX, and is overall a good bib manager
+- Install [LyX](http://www.lyx.org/), and (optionally) install the version
+  of Jabref that comes with it
+- Install [R](http://www.r-project.org/) and the `'knitr'` package 
+- (Mac and Linux) Install the `york-thesis` class (if it wasn't shipped with
+  the TeX manager in step 1) through TeX-live or whatever system you are using
+- (Optional) Obtain a decent `.bib` manager. You could just use
+  a text editor but a dedicated .bib manager is much nicer. If you chose to
+  install Jabref when installing LyX, it has support to push references 
+  directly to LyX, and is overall a good bib manager
 
 ### Configure:
 
-1) Move the `'york-thesis.layout'` file in the `Extra/` directory 
+- Move the `'york-thesis.layout'` file in the `Extra/` directory 
    to LyX's `~/layouts` directory (On Ubuntu mine was located in 
    `~/home/phil/.lyx/layouts`; Windows is probably in
    `C:/Program Files/LyX/layouts`; and Mac is in the application itself 
    (right click on `LyX.app` and go `"show package contents"`, then inside that
    `Contents\Resources\layouts`)
-2) Open the LyX program and go to `'Tools -> Reconfigure'`. Restart LyX.
-3) Pat yourself on the back because it should work now LyX! You can open 
+- Open the LyX program and go to `'Tools -> Reconfigure'`. Restart LyX.
+- Pat yourself on the back because it should work now LyX! You can open 
    `.lyx` files directly, or open them with 'File -> Open' if you open LyX first
 
 

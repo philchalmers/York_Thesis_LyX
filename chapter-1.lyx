@@ -1,0 +1,208 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass york-thesis
+\use_default_options true
+\master york-thesis.lyx
+\begin_modules
+knitr
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic true
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Background Chapter
+\end_layout
+
+\begin_layout Standard
+This is chapter 1, which cites 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Chalmers2012"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+A section
+\end_layout
+
+\begin_layout Standard
+Some text in a section new text.
+\end_layout
+
+\begin_layout Subsection
+A subsection
+\end_layout
+
+\begin_layout Standard
+Some test in a subsection (probably as low as you need to go).
+\end_layout
+
+\begin_layout Standard
+Equation example:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P(1|\theta,\phi)=\frac{{1}}{1+\exp{[-1.702\cdot(\alpha_{1}\theta_{1}+\alpha_{2}\theta_{2}+\beta)]}}\label{eq:example-equation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As can be seen in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:example-equation"
+
+\end_inset
+
+...blah blah blah.
+\end_layout
+
+\begin_layout Section
+Section With R Code
+\end_layout
+
+\begin_layout Standard
+It is also possible to include R code directly by using the knitr module,
+ and switching to LyX's ERT mode (
+\begin_inset Quotes eld
+\end_inset
+
+Evil Red Text
+\begin_inset Quotes erd
+\end_inset
+
+ for raw LaTeX code).
+ For example, chunk options are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The options given to the knitr chunk below are (in order): name the code
+ chunk 'chunk', give the figure caption 'My histogram', center the figure,
+ make it half the written text width, and force it to be placed exactly
+ where it was define (other common options are top [t] or bottom [b] of
+ the page)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<chunk, fig.cap='My histogram', fig.align='center', out.width='.5
+\backslash
+
+\backslash
+linewidth', fig.pos='h'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+x <- rnorm(100)
+\end_layout
+
+\begin_layout Plain Layout
+
+head(x)
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(x)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

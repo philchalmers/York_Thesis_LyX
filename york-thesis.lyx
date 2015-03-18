@@ -4,6 +4,8 @@
 \begin_header
 \textclass york-thesis
 \begin_preamble
+\usepackage[natbibapa]{apacite}
+
 %========= package setup ================
 \setboolean{masters}{false}      % set true for a Master's thesis;
                                 % false for a PhD dissertation
@@ -82,9 +84,9 @@ knitr
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine natbib
-\cite_engine_type authoryear
-\biblio_style plainnat
+\cite_engine basic
+\cite_engine_type default
+\biblio_style natbibapa
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -209,7 +211,7 @@ filename "chapter-2.lyx"
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "thesis"
-options "apalike"
+options "apacite"
 
 \end_inset
 

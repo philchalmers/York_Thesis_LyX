@@ -105,5 +105,81 @@ chapter-2.lyx
 .
 \end_layout
 
+\begin_layout Standard
+Include figures and tables by placing them in 
+\begin_inset Quotes eld
+\end_inset
+
+floating enviroments
+\begin_inset Quotes erd
+\end_inset
+
+.
+ So for a figure, use 
+\family typewriter
+Insert -> Float -> Figure
+\family default
+, and then inside the generated box point to your external figure files
+ with 
+\family typewriter
+Insert -> Graphics
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Yorklogo.pdf
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+My figure title 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:My-figure-title"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:My-figure-title"
+
+\end_inset
+
+ is an image of York Universities logo.
+\end_layout
+
 \end_body
 \end_document

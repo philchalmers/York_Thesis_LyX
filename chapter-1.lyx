@@ -146,7 +146,36 @@ Evil Red Text
 \end_inset
 
  for raw LaTeX code).
- For example, chunk options are:
+ For example:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<setup, include=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# this chunk does not show up in the pdf (not 'included')
+\end_layout
+
+\begin_layout Plain Layout
+
+options(digits = 4)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -155,7 +184,7 @@ status open
 
 \begin_layout Plain Layout
 The options given to the knitr chunk below are (in order): name the code
- chunk 'chunk', give the figure caption 'My histogram', center the figure,
+ chunk ('chunk'), the figure caption ('My histogram'), center the figure,
  make it half the written text width, and force it to be placed exactly
  where it was define (other common options are top [t] or bottom [b] of
  the page)

@@ -4,16 +4,16 @@
 \begin_header
 \textclass york-thesis
 \begin_preamble
-\usepackage[natbibapa]{apacite}
-
 %========= package setup ================
 \setboolean{masters}{false}      % set true for a Master's thesis;
-                                % false for a PhD dissertation
-\setboolean{hasfigures}{false}  % set true if you have figures
-\setboolean{hastables}{false}   % set true of you have tables
-\masterof{Arts}           % this is the type of Master's degree you
-                          % are attempting. If the boolean masters is
-                          % false, this has no effect. 
+                                                              % false for a PhD dissertation
+
+\setboolean{hasfigures}{false}    % set true if you have figures
+
+\setboolean{hastables}{false}     % set true of you have tables
+
+\masterof{Arts}       % this is the type of Master's degree you  are attempting. 
+                                       % If the boolean masters is false, this has no effect. 
 
 %committee members (only 3 for Masters)
 \committeememberslist{
@@ -29,16 +29,17 @@
 % The following macros need appear in no particular order, but if you
 % are going to use them, they have to be defined before you begin your
 % document environment. Sorry, but they have to be in LaTeX format and not
-% LyX
+% LyX. Just comment them out if you don't want to use them
 %
-\abstractfile{abstract.tex}
-%\dedicationfile{dedication.tex}
-%\acknowledgementsfile{acknowledgements.tex}
-%\prefacefile{preface.tex}
-%\abbreviationsfile{abbreviations.tex}
-%
+\abstractfile{front/abstract.tex}
+\acknowledgementsfile{front/acknowledgements.tex}
+%\dedicationfile{front/dedication.tex}
+%\prefacefile{front/preface.tex}
+%\abbreviationsfile{front/abbreviations.tex}
 
- %========  user required packages ========
+
+ %========  User required packages. Add more if needed ========
+\usepackage[natbibapa]{apacite}
  \usepackage{booktabs}
  \usepackage{amsmath}
  \usepackage{amssymb}
@@ -210,7 +211,7 @@ filename "chapter-2.lyx"
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "thesis"
+bibfiles "bibligraphy/thesis"
 options "apacite"
 
 \end_inset

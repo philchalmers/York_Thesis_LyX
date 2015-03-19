@@ -3,15 +3,15 @@ York Thesis Class in LyX
 
 This is an example repository used for building thesis (Masters or PhD) in LyX.
 
-LyX, like LaTeX, is a document preperation system built around the concept of defining the
+LyX, like LaTeX, is a document preparation system built around the concept of defining the
 *structure* of your document. For larger documents, such as a dissertation, this is
 incredibly useful because the document is much easier to keep internally consistent
 (e.g., figure and table labels will always be correct, even if you add or remove others 
 at a later time). E.g., see 
 [this blog post](https://amrys.wordpress.com/2013/01/16/why-your-should-latex-your-dissertation-or-why-you-dont-have-to-write-your-dissertation-in-word/) for a discussion. 
 
-As well, it's very easy to turn a thesis written in LyX into publised articles, 
-because the labels will always be constently labelled. Hence, you could create a 
+As well, it's very easy to turn a thesis written in LyX into published articles, 
+because the labels will always be consistently labeled. Hence, you could create a 
 new `apa6` manuscript file in LyX to copy-and-paste your way 
 towards your next publication. It really is that simple.
 

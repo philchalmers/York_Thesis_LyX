@@ -152,7 +152,7 @@ filename "front/acknowledgements.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "front/front-matter.lyx"
+filename "front/front-matter.tex"
 
 \end_inset
 

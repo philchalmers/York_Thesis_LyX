@@ -1,0 +1,65 @@
+%========  Custom commands for LyX. DO NOT EDIT OR DELETE THIS FILE!! ========
+
+\newcommand{\Abstract}[1]{\gdef\@Abstract{#1}}%
+\let\@Abstract\@empty
+\def\makeAbstract{%
+  \chapter*{Abstract}
+  \addcontentsline {toc}{chapter}{Abstract}
+  \noindent
+  \@Abstract
+}
+
+\newcommand{\Acknowledgements}[1]{\gdef\@Acknowledgements{#1}}%
+\let\@Acknowledgements\@empty
+\def\makeAcknowledgements{%
+  \chapter*{Acknowledgements}
+  \addcontentsline {toc}{chapter}{Acknowledgements}
+  \noindent
+  \@Acknowledgements
+}
+
+\newcommand{\Dedication}[1]{\gdef\@Dedication{#1}}%
+\let\@Dedication\@empty
+\def\makeDedication{%
+  \newpage
+  \@Dedication
+}
+
+\newcommand{\Preface}[1]{\gdef\@Preface{#1}}%
+\let\@Preface\@empty
+\def\makePreface{%
+  \chapter*{Preface}
+  \addcontentsline {toc}{chapter}{Preface}
+  \noindent
+  \@Preface
+}
+
+\newcommand{\Abbreviations}[1]{\gdef\@Abbreviations{#1}}%
+\let\@Abbreviations\@empty
+\def\makeAbbreviations{%
+  \chapter*{Abbreviations}
+  \addcontentsline {toc}{chapter}{Abbreviations}
+  \noindent
+  \@Abbreviations
+}
+
+\def\makefrontmatter{%
+  \pagestyle {empty}
+  \pagenumbering {roman}
+  \maketitlepage
+  \pagestyle {empty} \makecopyrightpage
+  \pagestyle {empty} \makeauthenticitypage
+  \setcounter {page} {3}
+  \ifx\@Abstract\@empty \else{\makeAbstract} \fi
+  \pagestyle {fancy}
+  \ifx\@Dedication\@empty \else{\makeDedication} \fi
+  \ifx\@Acknowledgements\@empty \else{\makeAcknowledgements} \fi
+  \tableofcontents
+  \ifthenelse{\boolean{hastables}}{\listoftables}{}
+  \ifthenelse{\boolean{hasfigures}}{\listoffigures}{}
+  \ifx\@Preface\@empty \else{\makePreface} \fi
+  \ifx\@Abbreviations\@empty \else{\makeAbbreviations} \fi
+  \newpage
+  \pagenumbering {arabic}
+  \setcounter {page}{1}
+}

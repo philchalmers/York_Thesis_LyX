@@ -4,7 +4,8 @@
 \begin_header
 \textclass york-thesis
 \begin_preamble
-%========= package setup ================
+%================ York-thesis setup (preamble) ===================
+
 \setboolean{masters}{false}      % set true for a Master's thesis;
                                                               % false for a PhD dissertation
 
@@ -12,7 +13,7 @@
 
 \setboolean{hastables}{false}     % set true of you have tables
 
-\masterof{Arts}       % this is the type of Master's degree you  are attempting. 
+\masterof{Arts}       % this is the type of Master's degree you are attempting. 
                                        % If the boolean masters is false, this has no effect. 
 
 %committee members (only 3 for Masters)
@@ -24,22 +25,11 @@
     \item Fourth Examiner
     \item Fifth Examiner
     \item Sixth Examiner
-  \end{enumerate}}
- 
-% The following macros need appear in no particular order, but if you
-% are going to use them, they have to be defined before you begin your
-% document environment. Sorry, but they have to be in LaTeX format and not
-% LyX. Just comment them out if you don't want to use them
-%
-\abstractfile{front/abstract.tex}
-\acknowledgementsfile{front/acknowledgements.tex}
-%\dedicationfile{front/dedication.tex}
-%\prefacefile{front/preface.tex}
-%\abbreviationsfile{front/abbreviations.tex}
-
+\end{enumerate}}
 
  %========  User required packages. Add more if needed ========
-\usepackage[natbibapa]{apacite}
+ \usepackage{extras/york-thesis-LyX}
+ \usepackage[natbibapa]{apacite}
  \usepackage{booktabs}
  \usepackage{amsmath}
  \usepackage{amssymb}
@@ -124,10 +114,6 @@ Super Long And Cryptic Title Explaining Why You Have Had No Life For The
 -Years
 \end_layout
 
-\begin_layout DegreeName
-Doctor
-\end_layout
-
 \begin_layout Author
 I.
  M.
@@ -135,25 +121,18 @@ I.
  Author
 \end_layout
 
+\begin_layout DegreeName
+Doctor
+\end_layout
+
 \begin_layout Department
 Department of Cool Research
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%----- Be sure to edit Document -> Settings -> LaTeX Preamble first -------%
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-makefrontmatter
-\end_layout
+\begin_inset CommandInset include
+LatexCommand include
+filename "front/abstract.lyx"
 
 \end_inset
 
@@ -161,13 +140,9 @@ makefrontmatter
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-This is the master file which is used to collect all the sub files together
- (abstract, chapters, appendix, bibliography, etc).
-\end_layout
+\begin_inset CommandInset include
+LatexCommand include
+filename "front/acknowledgements.lyx"
 
 \end_inset
 
@@ -175,13 +150,9 @@ This is the master file which is used to collect all the sub files together
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Insert chapters and appendices using Insert -> File -> Child Document (with
- include option)
-\end_layout
+\begin_inset CommandInset include
+LatexCommand include
+filename "front/front-matter.lyx"
 
 \end_inset
 

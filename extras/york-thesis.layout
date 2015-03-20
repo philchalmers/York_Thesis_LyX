@@ -44,6 +44,7 @@ End
 
 
 Style Title
+	Category              FrontMatter
 	LatexName             title
 	LatexType             Command
 	InTitle               1
@@ -55,6 +56,7 @@ Style Title
 End
 
 Style DegreeName
+	Category              FrontMatter
 	LatexName             degreename
 	LatexType             Command
 	InTitle               1
@@ -63,6 +65,7 @@ Style DegreeName
 End
 
 Style Author
+	Category              FrontMatter
 	LatexName             author
 	LatexType             Command
 	InTitle               1
@@ -77,6 +80,7 @@ Style Author
 End
 
 Style DefenceDate 
+	Category              FrontMatter
 	LatexName             date
 	LatexType             Command
 	InTitle               1
@@ -90,18 +94,36 @@ Style DefenceDate
 End
 
 Style Department
+	Category              FrontMatter
 	LatexName             department
 	LatexType             Command
 	InTitle               1
-	Margin                Dynamic
+	TopSep                0.5
+	ParSep                0.5
+	Align                 Center
+	Font
+	  Size                Small
+	EndFont
+End
+
+Style Abstract
+	Category              FrontMatter
+	LatexName             Abstract
+	LatexType             Command
+	InTitle               1
+	Margin                Static
 	ParSkip               0.4
 	BottomSep             1.5
 	TopSep                1.5
 	ParSep                1.5
-	Align                 Left
+	LeftMargin            MMN
+	RightMargin           MMN
+	TopSep                0.8
+	BottomSep             0.8
+	Align                 Block
 	AlignPossible         Block, Left, Right, Center
-	LabelType             Static
-	LabelString           "Department:"
+	Labeltype             Above
+	LabelString           "Abstract"
 	Labelsep              M
 	LabelFont
 	  Series              Bold
@@ -109,11 +131,114 @@ Style Department
 	EndFont
 End
 
+Style Acknowledgements
+	Category              FrontMatter
+	LatexName             Acknowledgements
+	LatexType             Command
+	InTitle               1
+	Margin                Static
+	ParSkip               0.4
+	BottomSep             1.5
+	TopSep                1.5
+	ParSep                1.5
+	Align                 Left
+	LeftMargin            MMN
+	RightMargin           MMN
+	Align                 Block
+	AlignPossible         Block, Left, Right, Center
+	Labeltype             Centered
+	LabelString           "Acknowledgements"
+	Labelsep              M
+	LabelFont
+	  Series              Bold
+	  Size                Small
+	EndFont
+End
+
+Style Dedication
+	Category              FrontMatter
+	LatexName             Dedication
+	LatexType             Command
+	InTitle               1
+	Margin                Static
+	ParSkip               0.4
+	BottomSep             1.5
+	TopSep                1.5
+	ParSep                1.5
+	Align                 Left
+	LeftMargin            MMN
+	RightMargin           MMN
+	Align                 Block
+	AlignPossible         Block, Left, Right, Center
+	Labeltype             Static
+	LabelString           "Dedication"
+	Labelsep              M
+	LabelFont
+	  Series              Bold
+	  Size                Small
+	EndFont
+End
+
+Style Preface
+	Category              ExtraFrontMatter
+	LatexName             Preface
+	LatexType             Command
+	InTitle               1
+	Margin                Static
+	ParSkip               0.4
+	BottomSep             1.5
+	TopSep                1.5
+	ParSep                1.5
+	Align                 Left
+	LeftMargin            MMN
+	RightMargin           MMN
+	Align                 Block
+	AlignPossible         Block, Left, Right, Center
+	Labeltype             Static
+	LabelString           "Preface"
+	Labelsep              M
+	LabelFont
+	  Series              Bold
+	  Size                Small
+	EndFont
+End
+
+Style Abbreviations
+	Category              ExtraFrontMatter
+	LatexName             Abbreviations
+	LatexType             Command
+	InTitle               1
+	Font
+	  Size                Small
+	EndFont
+	Margin                Dynamic
+	ParSkip               0.4
+	BottomSep             1.5
+	TopSep                1.5
+	ParSep                1.5
+	Align                 Left
+	LeftMargin            MMN
+	RightMargin           MMN
+	Align                 Block
+	AlignPossible         Block, Left, Right, Center
+	Labeltype             Static
+	LabelString           "Abbreviations"
+	Labelsep              M
+	LabelFont
+	  Series              Bold
+	  Size                Small
+	EndFont
+End
+
+Input stdlists.inc
 Input stdlayouts.inc
 Input stdsections.inc
 Input stdinsets.inc
 Input stdfloats.inc
 Input stdcounters.inc
+
+NoStyle Paragraph
+NoStyle Subparagraph
 
 Style Chapter
 	LabelType             No_Label

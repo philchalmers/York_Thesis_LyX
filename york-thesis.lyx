@@ -4,37 +4,7 @@
 \begin_header
 \textclass york-thesis
 \begin_preamble
-%================ York-thesis setup (preamble) ===================
-
-\setboolean{masters}{false}      % set true for a Master's thesis;
-                                                              % false for a PhD dissertation
-
-\setboolean{hasfigures}{false}    % set true if you have figures
-
-\setboolean{hastables}{false}     % set true of you have tables
-
-\masterof{Arts}       % this is the type of Master's degree you are attempting. 
-                                       % If the boolean masters is false, this has no effect. 
-
-%committee members (only 3 for Masters)
-\committeememberslist{
-  \begin{enumerate}
-    \item First Examiner
-    \item Second Examiner
-    \item Third Examiner
-    \item Fourth Examiner
-    \item Fifth Examiner
-    \item Sixth Examiner
-\end{enumerate}}
-
- %========  User required packages. Add more if needed ========
- \usepackage{extras/york-thesis-LyX}
- \usepackage[natbibapa]{apacite}
- \usepackage{booktabs}
- \usepackage{amsmath}
- \usepackage{amssymb}
- \usepackage{txfonts}
- \usepackage{subfig}
+ \usepackage{front/preamble}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -127,6 +97,21 @@ Doctor
 
 \begin_layout Department
 Department of Cool Research
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+This is the order of the final document.
+ Everything after 'front-matter.tex' will be placed in the declared order,
+ everything before will automatically be put in the correct location.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

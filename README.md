@@ -30,16 +30,16 @@ To use this package you'll need to meet the following requirements:
 
 As well, if you want to go the extra mile (and you should!)
 
-- Obtain a decent `.bib` manager. You could just use
+- Obtain a decent bibliography manager to edit `.bib` files. You could just use
   a text editor but a dedicated `.bib` manager is much nicer. 
 - If you installed [Jabref](http://jabref.sourceforge.net/) when installing LyX, 
-  it has support to push references directly to LyX, and is overall a good bib manager
+  it has support to push references directly to LyX, and is overall a good reference manager
 
 ### Configure:
 
-- Move the `'york-thesis.layout'` file in the `extra/` directory 
+- Move the `'york-thesis.layout'` file in the `LyX_files/` directory 
    to LyX's `~/layouts` directory 
-     - On Ubuntu mine was located in `~/home/phil/.lyx/layouts`
+     - On Ubuntu, mine was located in `~/home/phil/.lyx/layouts`
      - Windows is probably in `C:/Program Files/LyX/layouts`
      - Mac is in the application itself (right click on `LyX.app` and go to
        `"show package contents"`, then inside that `Contents\Resources\layouts`)

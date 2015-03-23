@@ -1,17 +1,21 @@
 %================ York-thesis setup (preamble) ===================
 
+% edit the following arguemnts to suit your degree (MA v.s. PhD), 
+%    degree type, whether you want a table and figures index in the table 
+%    of contents, and who your committee members are
+
 \setboolean{masters}{false}      % set true for a Master's thesis;
                                  % false for a PhD dissertation
 
 
+\masterof{Arts}       % this is the type of Master's degree you are attempting. 
+                      % If the boolean masters is false, this has no effect. 
+                      
+                      
 \setboolean{hasfigures}{false}    % set true if you have figures
 
 
 \setboolean{hastables}{false}     % set true of you have tables
-
-
-\masterof{Arts}       % this is the type of Master's degree you are attempting. 
-                      % If the boolean masters is false, this has no effect. 
 
 
 \committeememberslist{       % committee members (only 3 for Masters)
@@ -26,7 +30,7 @@
 
 
 %================ Include more LaTeX packages and global customization commands here ===================
- \usepackage{extras/york-thesis-LyX}
+ \usepackage{LyX_files/york-thesis-LyX}
  \usepackage[natbibapa]{apacite}
  \usepackage{booktabs}
  \usepackage{amsmath}

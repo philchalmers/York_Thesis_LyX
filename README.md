@@ -16,7 +16,7 @@ new `apa6` manuscript file in LyX to copy-and-paste your way
 towards your next publication. It really is that simple.
 
 Installation
-------------------------
+========================
 
 To use this package you'll need to meet the following requirements:
 
@@ -48,6 +48,45 @@ As well, if you want to go the extra mile (and you should!)
 Finally, pat yourself on the back because it should work now LyX! You can open `.lyx` files 
 directly, or open them with `'File -> Open'` if you open LyX first
 
+How To Use 
+========================
+
+The way to understand how LyX (and LaTeX) behave is to think of files, figures, references, 
+etc, as objects being 'pointed to' within some LyX file. A LyX file points to a figure, and this is 
+included when the document is compiled to a PDF. Any external changes to said file will be included in 
+the document the next time it is compiled; this has huge benefits when things have to be edited at a 
+later time (unlike document systems like MS Word, in which if a figure has to be changed it has to be changed
+in the document itself.....which can have horrible repercussions and overall is quite cumbersome). This same
+philosophy works for references, chapters, appendices, etc, and helps to keep different document elements 
+isolated and manageable.
+
+The design of the LyX files for this York Thesis template is fairly simply: 
+
+- There is one master file, `york-thesis.lyx`, which points to independent files (styles,
+  front-matter, chapters, etc). This is the main file which links all the material together, and 
+  essentially declares the structure of the final product.
+- Chapters go into their own separate files in the main directory, and are included in the master 
+  file as 'Children' using the LyX insert commands.
+- Front-matter material has been put into the `front/` directory, containing LyX and LaTeX files.
+  Edit these as you see fit. The only LaTeX file that you should edit directly (with a standard text
+  text editor) is the `preamble.tex` file, which contains information about your degree, committee, etc.
+- Extra material, such as customized figures, tables, etc, go into other directories and are inserted
+  with LyX `Input` methods. This goes for the bibliography as well, which is included in a `bibliography/`
+  directory by default.
+- Finally, to compile the file to a PDF, click on `Document -> View Master Document`, or use a suitable
+  keyboard shortcut (e.g., `Ctrl + Shift + r`)
+
+Some stylistic things to help keep you organized
+
+- Label sections, tables, figures, etc, often and with meaningful labels. 
+  This will help you reference things later on, and are dynamically updated as you add more material. Reference 
+  labels with `Insert -> Cross-Reference`
+- Use PDF's files for figures. These are extremely high quality (vector graphics), and look the best in the final product.
+- Break content up into folders. If it turns out you have lots of figures and tables, you may want to break these
+  up by chapter. So instead of putting all figures into `figures/`, create new directories such as 
+  `figures/chapter-1/`, `figures/chapter-2/`, and so on, and put files in there.
+- Use `BibTeX` to manage your references. If you need tools to convert your previous references into something more 
+  suitable, [here is a good start](http://www.snowelm.com/~t/doc/tips/makebib.en.html)
 
 Extra
 -----------------------
@@ -56,11 +95,11 @@ It might be a good idea to set up a keyboard shortcut or three for compiling the
 By default, LyX does not have an 'update master file' keyboard shortcut, though it does have a 
 compile master file option (`Document -> View Master Documentation`), which for me was `Ctrl+Alt+R`. 
 
-To add an update shortcut (so that your opened pdf stays on the same page after recompiled) use the 
+To add an update shortcut (so that your opened PDF stays on the same page after recompiled) use the 
 following:
 
 - Got to `Tools -> Preferences -> Editing -> Shortcuts`, and click `New`
 - Give the command the name `master-buffer-update`, and a nice keyboard shortcut. 
-  I gave it `Ctrl+Alt+Shift+R`. Click okay to finish.
+  I gave it `Ctrl + Alt + Shift + r`. Click okay to finish.
 
 

@@ -4,7 +4,7 @@
 \begin_header
 \textclass york-thesis
 \begin_preamble
- \usepackage{front/preamble}
+ \input{front/preamble}
 \end_preamble
 \use_default_options true
 \begin_modules

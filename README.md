@@ -15,6 +15,14 @@ because the labels will always be consistent in new documents. Hence, you could 
 new `apa6` manuscript file in LyX to copy-and-paste your way 
 towards your next manuscript and publication. It really is that simple.
 
+If you need some material to help understand the fundimentals of LyX, here are a few sources:
+
+- [Visual Tour](http://www.lyx.org/VisualTour) from the main LyX website
+- [Some fundimenatl elements](http://ocw.mit.edu/courses/nuclear-engineering/22-033-nuclear-systems-design-project-fall-2011/tools/MIT22_033F11_tools_lyx_tut.pdf) in pdf form
+- [5-part YouTube video](https://www.youtube.com/watch?v=m4cEAVmLegg) primarily focused 
+  on making math in LyX (if you know any LaTeX math commands, you are *way* ahead of the game here because typing
+  math in LyX with a LaTeX flavour will make you extremely efficient)
+
 Installation
 ========================
 

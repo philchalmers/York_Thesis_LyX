@@ -3,13 +3,7 @@
 \begin_document
 \begin_header
 \textclass york-thesis
-\begin_preamble
- \input{front/preamble}
-\end_preamble
 \use_default_options true
-\begin_modules
-knitr
-\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -27,7 +21,7 @@ knitr
 \font_tt_scale 100
 \graphics default
 \default_output_format default
-\output_sync 1
+\output_sync 0
 \bibtex_command default
 \index_command default
 \paperfontsize default
@@ -47,18 +41,13 @@ knitr
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
-\biblio_style natbibapa
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
 \justification true
 \use_refstyle 1
-\branch macros
-\selected 0
-\filename_suffix 0
-\color #faf0e6
-\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -80,34 +69,31 @@ knitr
 
 \begin_body
 
-\begin_layout Title
-Super Long And Cryptic Title Explaining Why You Have Had No Life For The
- Past 
-\begin_inset Formula $N$
-\end_inset
-
--Years
-\end_layout
-
-\begin_layout Author
-I.
- M.
- D.
- Author
-\end_layout
-
-\begin_layout DegreeName
-Doctor
-\end_layout
-
-\begin_layout Department
-Department of Cool Research
-\end_layout
-
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "LyX_files/custom_macros.lyx"
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Custom Macro functions to use.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+For those who know LaTeX, this is essentially creating 
+\backslash
+newcommand{}'s but telling LyX how they should be displayed on 
+\end_layout
+
+\begin_layout Plain Layout
+the screen.
+ The default behavior just renders the LaTeX inputs the usual way, but this
+ can be customized.
+ So, opening a math mode and typing 
+\backslash
+twoPL will display the equation below.
+\end_layout
 
 \end_inset
 
@@ -115,61 +101,8 @@ filename "LyX_files/custom_macros.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "front/abstract.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "front/acknowledgements.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "front/front-matter.tex"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "chapter-1.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "chapter-2.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "bibligraphy/thesis"
-options "apacite"
-
+\begin_inset FormulaMacro
+\newcommand{\twoPL}{\frac{\exp(\alpha+\beta\theta)}{1+\exp(\alpha+\beta\theta)}}
 \end_inset
 
 

@@ -95,6 +95,13 @@ the screen.
 twoPL will display the equation below.
 \end_layout
 
+\begin_layout Plain Layout
+Commands can also have optional or required inputs.
+ The second macro requires two inputs (#1 and #2) within curly brackets,
+ and the inputs will replace the numbers when defined.
+ 
+\end_layout
+
 \end_inset
 
 
@@ -103,6 +110,14 @@ twoPL will display the equation below.
 \begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\twoPL}{\frac{\exp(\alpha+\beta\theta)}{1+\exp(\alpha+\beta\theta)}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myfrac}[2]{\frac{\exp(#1)^{20}}{1+\exp(#2)^{30}}}
 \end_inset
 
 

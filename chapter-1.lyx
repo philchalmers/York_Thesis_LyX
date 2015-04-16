@@ -161,7 +161,12 @@ View -> Source Pane
 custom_macros
 \family default
 , and allows equations and such to be reused by other documents in the future.
- No more copy-and-pasting!
+ No more copy-and-pasting! Macros can also have optional and required inputs,
+ like so 
+\begin_inset Formula $\myfrac{\alpha}{\beta}$
+\end_inset
+
+, where the required inputs were left blank when first defined.
 \end_layout
 
 \begin_layout Section

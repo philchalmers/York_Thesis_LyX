@@ -32,7 +32,6 @@ To use this template you'll need to meet the following requirements:
 
 - Install [LyX](http://www.lyx.org/), and (optionally) install the version
   of Jabref that comes with it
-- Install [R](http://www.r-project.org/) and the `'knitr'` package 
 - (Mac and Linux) Install the `york-thesis` class (if it wasn't shipped with
   the TeX manager in step 1) through TeX-live or whatever system you are using
 
@@ -42,6 +41,9 @@ As well, if you want to go the extra mile (and you should!)
   a text editor but a dedicated `.bib` manager is much nicer. 
 - If you installed [Jabref](http://jabref.sourceforge.net/) when installing LyX, 
   it has support to push references directly to LyX, and is overall a good reference manager
+- Install [R](http://www.r-project.org/) and the `'knitr'` package. This
+  is only required if you want to integrate LyX with R to evaluate R code within
+  your document
 
 ### Configuration:
 

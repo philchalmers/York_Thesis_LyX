@@ -7,9 +7,6 @@
  \input{front/preamble}
 \end_preamble
 \use_default_options true
-\begin_modules
-knitr
-\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -158,6 +155,36 @@ filename "chapter-1.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "chapter-2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapter-3.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Uncomment the previous block this to include chapter-3.lyx, containing examples
+ of how to use R directly within LyX
+\end_layout
 
 \end_inset
 

@@ -5,9 +5,6 @@
 \textclass york-thesis
 \use_default_options true
 \master york-thesis.lyx
-\begin_modules
-knitr
-\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default

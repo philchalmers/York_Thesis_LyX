@@ -5,9 +5,6 @@
 \textclass york-thesis
 \use_default_options true
 \master york-thesis.lyx
-\begin_modules
-knitr
-\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -167,108 +164,6 @@ custom_macros
 \end_inset
 
 , where the required inputs were left blank when first defined.
-\end_layout
-
-\begin_layout Section
-Section With R Code
-\end_layout
-
-\begin_layout Standard
-It is also possible to include R code directly by using the knitr module,
- and switching to LyX's ERT mode (
-\begin_inset Quotes eld
-\end_inset
-
-Evil Red Text
-\begin_inset Quotes erd
-\end_inset
-
- for raw LaTeX code).
- For example:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<<setup, include=FALSE>>=
-\end_layout
-
-\begin_layout Plain Layout
-
-# this chunk does not show up in the pdf (not 'included')
-\end_layout
-
-\begin_layout Plain Layout
-
-options(digits = 4)
-\end_layout
-
-\begin_layout Plain Layout
-
-@
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-The options given to the knitr chunk below are (in order): name the code
- chunk ('chunk'), the figure caption ('My histogram'), center the figure,
- make it half the written text width, and force it to be placed exactly
- where it was define (other common options are top [t] or bottom [b] of
- the page)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<<chunk, fig.cap='My histogram', fig.align='center', out.width='.5
-\backslash
-
-\backslash
-linewidth', fig.pos='h'>>=
-\end_layout
-
-\begin_layout Plain Layout
-
-x <- rnorm(100)
-\end_layout
-
-\begin_layout Plain Layout
-
-head(x)
-\end_layout
-
-\begin_layout Plain Layout
-
-hist(x)
-\end_layout
-
-\begin_layout Plain Layout
-
-@
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

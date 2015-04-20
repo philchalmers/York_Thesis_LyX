@@ -95,7 +95,7 @@ Evil Red Text
 \end_inset
 
  for raw LaTeX code).
- First, got to 
+ First, open the master document and go to 
 \family typewriter
 Document -> Settings -> Modules
 \family default
@@ -103,7 +103,7 @@ Document -> Settings -> Modules
 \family typewriter
 Rnw (knitr)
 \family default
-, then select it and click Add.
+, then select it and click Add; do the same for this file as well.
  This will make LyX know to Call R and use the 
 \family typewriter
 knitr

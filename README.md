@@ -30,16 +30,16 @@ To use this template you'll need to meet the following requirements:
 
 ### Requirements: 
 
-- Install [LyX](http://www.lyx.org/), and (optionally) install the version
-  of Jabref that comes with it
-- (Mac and Linux) Install the `york-thesis` class (if it wasn't shipped with
-  the TeX manager in step 1) through TeX-live or whatever system you are using
+- [LyX](http://www.lyx.org/) 
+- Install the `york-thesis` class through whatever TeX system you are using 
+  (e.g., TeX-live, MiKTeX, MacTeX)
+- Follow the configuration instructions below
 
 As well, if you want to go the extra mile (and you should!)
 
 - Obtain a decent bibliography manager to edit `.bib` files. You could just use
-  a text editor but a dedicated `.bib` manager is much nicer. 
-- If you installed [Jabref](http://jabref.sourceforge.net/) when installing LyX, 
+  a text editor but a dedicated `.bib` manager is much nicer. If you installed
+  [Jabref](http://jabref.sourceforge.net/) when installing LyX, 
   it has support to push references directly to LyX, and is overall a good reference manager
 - Install [R](http://www.r-project.org/) and the `'knitr'` package. This
   is only required if you want to integrate LyX with R to evaluate R code within
@@ -56,9 +56,9 @@ As well, if you want to go the extra mile (and you should!)
 - Open the LyX program and go to `'Tools -> Reconfigure'`. Now restart LyX.
 
 Finally, pat yourself on the back because it should work now LyX! You can open `.lyx` files 
-directly, or open them with `'File -> Open'` if you open LyX first
+directly, or open them with `'File -> Open'` if you open LyX first.
 
-How To Use 
+How To Use LyX
 ========================
 
 The way to understand how LyX (and LaTeX) behave is to think of files, figures, references, 
@@ -87,8 +87,9 @@ The design of the LyX files for this York Thesis template is fairly simply:
 Finally, to compile the LyX file to a PDF, click on `Document -> View Master Document`, or use a suitable
 keyboard shortcut (e.g., `Ctrl + Shift + R`). 
 
-Additionally, some stylistic things to help keep you organized:
+Additionally, some stylistic things to help keep you organized and efficient:
 
+- In LyX, turn on things like continuous spell-checking and word completion. These are off by default.
 - *Frequently label sections, tables, figures, etc, with meaningful labels*. 
   This will help you reference content later on, and are dynamically updated as you add more material. 
   Create a label with `Insert -> Label`, and reference any label with `Insert -> Cross-Reference`

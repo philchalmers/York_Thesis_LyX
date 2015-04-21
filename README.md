@@ -30,9 +30,9 @@ To use this template you'll need to meet the following requirements:
 
 ### Requirements: 
 
-- [LyX](http://www.lyx.org/) 
+- Install the [LyX](http://www.lyx.org/) program for your OS 
 - Install the `york-thesis` class through whatever TeX system you are using 
-  (e.g., TeX-live, MiKTeX, MacTeX)
+  (e.g., TeX-Live, MiKTeX, MacTeX)
 - Follow the configuration instructions below
 
 As well, if you want to go the extra mile (and you should!)

@@ -43,20 +43,70 @@
   \@Abbreviations
 }
 
+%renew spacing
+%\setlength {\textheight}{\paperheight-2.5in}
+\setlength {\oddsidemargin}{0.0in}
+\setlength {\evensidemargin}{0.0in}
+\setlength {\textwidth}{\paperwidth-2in}
+\ifthenelse{\boolean{saving}} {%
+  \spacing{1}
+  } {%
+  \spacing{2}
+  \renewenvironment{quote}{\oldquote\spacing{1}}%
+       {\oldendquote\spacing{2}}
+  \renewenvironment{quotation}{\oldquotation\spacing{1}}%
+       {\oldendquotation\spacing{2}}
+  \renewenvironment{verse}{\oldverse\spacing{1}}%
+       {\oldendverse\spacing{2}}
+}
+
+% redefine title page with latest FGS requirements (2014)
+\def\maketitlepage2{
+  \vspace*{.85in}
+  \begin{center}
+    \spacing{1}
+    \textbf{\MakeUppercase{\@title}}
+    \hugeskip
+    \hugeskip
+    \hugeskip
+    {\bigskip \MakeUppercase{\@author}}
+  \end{center}
+  \hugeskip \hugeskip \hugeskip \hugeskip \hugeskip \hugeskip
+  {\spacing{1}
+    \begin{center}
+      \ifmasters A THESIS \else A DISSERTATION \fi
+      SUBMITTED TO THE FACULTY OF GRADUATE STUDIES \\
+      IN PARTIAL FULFILMENT OF THE REQUIREMENTS \\
+      FOR THE DEGREE OF \\
+      \hugeskip \hugeskip \hugeskip 
+      \ifmasters \MakeUppercase{\@degreename} OF
+      \MakeUppercase{\@masterof} 
+      \else
+      \MakeUppercase{\@degreename} OF PHILOSOPHY \fi \\
+      \hugeskip \hugeskip
+      GRADUATE PROGRAM IN \MakeUppercase{\@department} \\
+      YORK UNIVERSITY \\
+      TORONTO, ONTARIO 
+      \hugeskip \hugeskip
+      \textcopyright \, \@author, \@date 
+    \end{center}}
+  \newpage }
+
+% redefine layout
 \def\makefrontmatter{%
   \pagestyle {empty}
   \pagenumbering {roman}
-  \maketitlepage
-  \pagestyle {empty} \makecopyrightpage
-  \pagestyle {empty} \makeauthenticitypage
+  \maketitlepage2
+  %\pagestyle {empty} \makecopyrightpage
+  %\pagestyle {empty} \makeauthenticitypage
   \setcounter {page} {3}
   \ifx\@Abstract\@empty \else{\makeAbstract} \fi
   \pagestyle {fancy}
   \ifx\@Dedication\@empty \else{\makeDedication} \fi
   \ifx\@Acknowledgements\@empty \else{\makeAcknowledgements} \fi
-  \tableofcontents
+  {\spacing{1}\tableofcontents
   \ifthenelse{\boolean{hastables}}{\listoftables}{}
-  \ifthenelse{\boolean{hasfigures}}{\listoffigures}{}
+  \ifthenelse{\boolean{hasfigures}}{\listoffigures}{}}
   \ifx\@Preface\@empty \else{\makePreface} \fi
   \ifx\@Abbreviations\@empty \else{\makeAbbreviations} \fi
   \newpage

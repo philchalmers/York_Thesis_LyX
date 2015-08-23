@@ -1,7 +1,8 @@
 York Thesis Class in LyX
 ========================
 
-This is an example repository used for building thesis (Masters or PhD) in LyX.
+This is an example repository used for building thesis (Masters or PhD) in LyX, derived from the instructions located on the 
+[technical requirements](http://gradstudies.yorku.ca/current-students/thesis-dissertation/organization/#section3c) page. 
 
 LyX, like LaTeX, is a document preparation system built around the concept of defining the
 *structure* of your document. For larger documents, such as a dissertation, this is
@@ -15,13 +16,13 @@ because the labels will always be consistent in new documents. Hence, you could 
 new `apa6` manuscript file in LyX to copy-and-paste your way 
 towards your next manuscript and publication. It really is that simple.
 
-If you need some material to help understand the fundimentals of LyX, here are a few sources:
+If you need some material to help understand the fundamentals of LyX, here are a few sources:
 
 - [Visual Tour](http://www.lyx.org/VisualTour) from the main LyX website
-- [Some fundimenatl elements](http://ocw.mit.edu/courses/nuclear-engineering/22-033-nuclear-systems-design-project-fall-2011/tools/MIT22_033F11_tools_lyx_tut.pdf) in pdf form
+- [Some fundamental elements](http://ocw.mit.edu/courses/nuclear-engineering/22-033-nuclear-systems-design-project-fall-2011/tools/MIT22_033F11_tools_lyx_tut.pdf) in pdf form
 - [5-part YouTube video](https://www.youtube.com/watch?v=m4cEAVmLegg) primarily focused 
   on making math in LyX (if you know any LaTeX math commands, you are *way* ahead of the game here because typing
-  math in LyX with a LaTeX flavour will make you extremely efficient)
+  math in LyX with a LaTeX flavor will make you extremely efficient)
 
 Installation
 ========================
@@ -79,8 +80,8 @@ The design of the LyX files for this York Thesis template is fairly simply:
   file as 'Children' using the LyX insert commands.
 - Front-matter material has been put into the `front/` directory, containing LyX and LaTeX files.
   Edit these as you see fit. The only LaTeX file that you should edit directly (with a standard text
-  editor) is the `preamble.tex` file, which contains information about your degree, committee, defence date, etc.
-- Extra material, such as customized figures, tables, appendicies, etc, go into other directories and are inserted
+  editor) is the `preamble.tex` file, which contains information about your degree, committee, defense date, etc.
+- Extra material, such as customized figures, tables, appendices, etc, go into other directories and are inserted
   with LyX `Input` methods. This goes for the bibliography as well, which is included in a `bibliography/`
   directory by default.
 

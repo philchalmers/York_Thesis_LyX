@@ -1,5 +1,22 @@
 %========  Custom commands for LyX. DO NOT EDIT OR DELETE THIS FILE!! ========
 
+%renew spacing
+%\setlength {\textheight}{\paperheight-2.5in}
+\setlength {\oddsidemargin}{0.0in}
+\setlength {\evensidemargin}{0.0in}
+\setlength {\textwidth}{\paperwidth-2in}
+\ifthenelse{\boolean{saving}} {%
+  \spacing{1}
+  } {%
+  \spacing{2}
+  \renewenvironment{quote}{\oldquote\spacing{1}}%
+       {\oldendquote\spacing{2}}
+  \renewenvironment{quotation}{\oldquotation\spacing{1}}%
+       {\oldendquotation\spacing{2}}
+  \renewenvironment{verse}{\oldverse\spacing{1}}%
+       {\oldendverse\spacing{2}}
+}
+
 \newcommand{\Abstract}[1]{\gdef\@Abstract{#1}}%
 \let\@Abstract\@empty
 \def\makeAbstract{%
@@ -43,23 +60,6 @@
   \@Abbreviations
 }
 
-%renew spacing
-%\setlength {\textheight}{\paperheight-2.5in}
-\setlength {\oddsidemargin}{0.0in}
-\setlength {\evensidemargin}{0.0in}
-\setlength {\textwidth}{\paperwidth-2in}
-\ifthenelse{\boolean{saving}} {%
-  \spacing{1}
-  } {%
-  \spacing{2}
-  \renewenvironment{quote}{\oldquote\spacing{1}}%
-       {\oldendquote\spacing{2}}
-  \renewenvironment{quotation}{\oldquotation\spacing{1}}%
-       {\oldendquotation\spacing{2}}
-  \renewenvironment{verse}{\oldverse\spacing{1}}%
-       {\oldendverse\spacing{2}}
-}
-
 % redefine title page with latest FGS requirements (2014)
 \def\maketitlepage2{
   \vspace*{.85in}
@@ -100,10 +100,10 @@
   %\pagestyle {empty} \makecopyrightpage
   %\pagestyle {empty} \makeauthenticitypage
   \setcounter {page} {2}
-  \ifx\@Abstract\@empty \else{\makeAbstract} \fi
-  \pagestyle {fancy}
-  \ifx\@Dedication\@empty \else{\makeDedication} \fi
-  \ifx\@Acknowledgements\@empty \else{\makeAcknowledgements} \fi
+  \ifx\@Abstract\@empty \else{\makeAbstract} \newpage \fi
+  %\pagestyle {fancy}
+  \ifx\@Dedication\@empty \else{\makeDedication} \newpage \fi
+  \ifx\@Acknowledgements\@empty \else{\makeAcknowledgements} \newpage \fi
   {\spacing{1}\tableofcontents
   \ifthenelse{\boolean{hastables}}{\listoftables}{}
   \ifthenelse{\boolean{hasfigures}}{\listoffigures}{}}

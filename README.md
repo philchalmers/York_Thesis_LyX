@@ -3,6 +3,8 @@ York Thesis Class in LyX
 
 This is an example repository used for building thesis (Masters or PhD) in LyX, derived from the instructions located on the 
 [technical requirements](http://gradstudies.yorku.ca/current-students/thesis-dissertation/organization/#section3c) page. 
+When compiled, the bare-bones of this thesis template will look [like this](https://github.com/philchalmers/York_Thesis_LyX/blob/master/york-thesis.pdf), which gives you a general outline of 
+how to start writting your thesis or disseration.  
 
 LyX, like LaTeX, is a document preparation system built around the concept of defining the
 *structure* of your document. For larger documents, such as a dissertation, this is

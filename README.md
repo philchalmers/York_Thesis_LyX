@@ -107,15 +107,6 @@ Additionally, some stylistic things to help keep you organized and efficient:
 Extra
 -----------------------
 
-It might be a good idea to set up a keyboard shortcut or three for compiling the master file directly.
-By default, LyX does not have an 'update master file' keyboard shortcut, though it does have a 
-compile master file option (`Document -> View Master Documentation`), which for me was `Ctrl + Alt + R`. 
-
-To add an update shortcut (so that your opened PDF stays on the same page after recompiled) use the 
-following:
-
-- Got to `Tools -> Preferences -> Editing -> Shortcuts`, and click `New`
-- Give the command the name `master-buffer-update`, and a nice keyboard shortcut. 
-  I gave it `Ctrl + Alt + Shift + R`. Click okay to finish.
+When compling the document to a pdf, if you are do not have the master file active (e.g., you currently have Chapter 3 active) then using `Ctrl + r` will not compile the entire document. Instead, use `Ctrl + Alt + r`, which for Linux and Windows is the *compile master document* keyboard hotkey. Note that this can be used to update the pdf file if it is already open, so use it as often as you like.
 
 

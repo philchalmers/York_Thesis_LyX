@@ -114,10 +114,10 @@
   \pagestyle {fancy}
   \ifx\@Dedication\@empty \else{\makeDedication} \newpage \fi
   \ifx\@Acknowledgements\@empty \else{\makeAcknowledgements} \newpage \fi
-  \ifx\@Symbols\@empty \else{\makeSymbols} \newpage \fi
   {\spacing{1}\tableofcontents
   \ifthenelse{\boolean{hastables}}{\listoftables}{}
   \ifthenelse{\boolean{hasfigures}}{\listoffigures}{}}
+  \ifx\@Symbols\@empty \else{\makeSymbols} \newpage \fi
   \ifx\@Preface\@empty \else{\makePreface} \fi
   \ifx\@Abbreviations\@empty \else{\makeAbbreviations} \fi
   \newpage

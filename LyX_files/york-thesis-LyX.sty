@@ -61,6 +61,15 @@
   \@Abbreviations
 }
 
+\newcommand{\Symbols}[1]{\gdef\@Symbols{#1}}%
+\let\@Symbols\@empty
+\def\makeSymbols{%
+  \chapter*{List of Symbols}
+  \addcontentsline {toc}{chapter}{List of Symbols}
+  \noindent
+  \@Symbols
+}
+
 % redefine title page with latest FGS requirements (2014)
 \def\maketitlepage2{
   \vspace*{.85in}
@@ -105,6 +114,7 @@
   \pagestyle {fancy}
   \ifx\@Dedication\@empty \else{\makeDedication} \newpage \fi
   \ifx\@Acknowledgements\@empty \else{\makeAcknowledgements} \newpage \fi
+  \ifx\@Symbols\@empty \else{\makeSymbols} \newpage \fi
   {\spacing{1}\tableofcontents
   \ifthenelse{\boolean{hastables}}{\listoftables}{}
   \ifthenelse{\boolean{hasfigures}}{\listoffigures}{}}

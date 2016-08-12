@@ -203,6 +203,30 @@ Style Preface
 	EndFont
 End
 
+Style Symbols
+	Category              FrontMatter
+	LatexName             Symbols
+	LatexType             Command
+	InTitle               1
+	Margin                Static
+	ParSkip               0.4
+	BottomSep             1.5
+	TopSep                1.5
+	ParSep                1.5
+	Align                 Left
+	LeftMargin            MMN
+	RightMargin           MMN
+	Align                 Block
+	AlignPossible         Block, Left, Right, Center
+	Labeltype             Centered
+	LabelString           "List of Symbols"
+	Labelsep              M
+	LabelFont
+	  Series              Bold
+	  Size                Small
+	EndFont
+End
+
 Input stdlists.inc
 Input stdlayouts.inc
 Input stdsections.inc

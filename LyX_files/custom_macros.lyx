@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass york-thesis
 \use_default_options true
 \maintain_unincluded_children false
@@ -9,16 +11,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -81,15 +83,18 @@ Custom Macro functions to use.
 \end_layout
 
 \begin_layout Plain Layout
-For those who know LaTeX, this is essentially creating 
+For those who know \SpecialChar LaTeX
+, this is essentially creating 
 \backslash
-newcommand{}'s but telling LyX how they should be displayed on 
+newcommand{}'s but telling \SpecialChar LyX
+ how they should be displayed on 
 \end_layout
 
 \begin_layout Plain Layout
 the screen.
- The default behavior just renders the LaTeX inputs the usual way, but this
- can be customized.
+ The default behavior just renders the \SpecialChar LaTeX
+ inputs the usual way, but this can
+ be customized.
  So, opening a math mode and typing 
 \backslash
 twoPL will display the equation below.
@@ -112,7 +117,7 @@ Commands can also have optional or required inputs.
 \newcommand{\twoPL}{\frac{\exp(\alpha+\beta\theta)}{1+\exp(\alpha+\beta\theta)}}
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Standard

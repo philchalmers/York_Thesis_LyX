@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass york-thesis
 \use_default_options true
 \master york-thesis.lyx
@@ -13,16 +15,16 @@ knitr
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -86,7 +88,8 @@ It is also possible to include R code directly by using the
 \family typewriter
 knitr
 \family default
- module, and switching to LyX's ERT mode (
+ module, and switching to \SpecialChar LyX
+'s ERT mode (
 \begin_inset Quotes eld
 \end_inset
 
@@ -94,7 +97,8 @@ Evil Red Text
 \begin_inset Quotes erd
 \end_inset
 
- for raw LaTeX code).
+ for raw \SpecialChar LaTeX
+ code).
  First, open the master document and go to 
 \family typewriter
 Document -> Settings -> Modules
@@ -104,12 +108,13 @@ Document -> Settings -> Modules
 Rnw (knitr)
 \family default
 , then select it and click Add; do the same for this file as well.
- This will make LyX know to Call R and use the 
+ This will make \SpecialChar LyX
+ know to Call R and use the 
 \family typewriter
 knitr
 \family default
  package.
- Next build an R chunk in ERT like so:
+ Next build an R chunk in ERT like so: 
 \end_layout
 
 \begin_layout Standard

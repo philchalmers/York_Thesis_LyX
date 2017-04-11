@@ -70,6 +70,18 @@
   \@Symbols
 }
 
+% redefine appendix style: Appendix titles must be sections now apparently
+\renewcommand\appendix{\par
+  \setcounter{chapter}{0}%
+  \setcounter{section}{0}%
+  \addcontentsline{toc}{chapter}{Appendicies}
+  \renewcommand\thesection{\Alph{section}}
+  \renewcommand\section{\@startsection {section}{2}{\z@}%
+                                 {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                 {2.3ex \@plus.2ex}%
+                                 {\normalfont\large\bfseries Appendix\ }}
+  \ifthenelse{\boolean{saving}}{\spacing{1}}{\spacing{2}}}
+
 % redefine title page with latest FGS requirements (2014)
 \def\maketitlepage2{
   \vspace*{.85in}
@@ -96,9 +108,12 @@
       \hugeskip \hugeskip
       GRADUATE PROGRAM IN \MakeUppercase{\@department} \\
       YORK UNIVERSITY \\
-      TORONTO, ONTARIO 
+      TORONTO, ONTARIO \\ 
+      \hugeskip 
+      \@date
       \hugeskip \hugeskip
-      \textcopyright \, \@author, \@date 
+      \textcopyright \, \@author, 2016
+      % \textcopyright \, \@author, \the\year
     \end{center}}
   \newpage }
 

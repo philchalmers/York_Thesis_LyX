@@ -1,24 +1,27 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass york-thesis
 \use_default_options true
+\master ../york-thesis.lyx
 \maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -69,55 +72,81 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_layout Symbols
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
-Custom Macro functions to use.
- 
+Symbols
 \end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-For those who know LaTeX, this is essentially creating 
-\backslash
-newcommand{}'s but telling LyX how they should be displayed on 
+Definition
 \end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-the screen.
- The default behavior just renders the LaTeX inputs the usual way, but this
- can be customized.
- So, opening a math mode and typing 
-\backslash
-twoPL will display the equation below.
-\end_layout
-
-\begin_layout Plain Layout
-Commands can also have optional or required inputs.
- The second macro requires two inputs (#1 and #2) within curly brackets,
- and the inputs will replace the numbers when defined.
- 
-\end_layout
-
+\begin_inset Formula $\alpha$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\twoPL}{\frac{\exp(\alpha+\beta\theta)}{1+\exp(\alpha+\beta\theta)}}
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+what alpha means
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\myfrac}[2]{\frac{\exp(#1)^{20}}{1+\exp(#2)^{30}}}
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+what beta means
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
 \end_inset
 
 

@@ -104,6 +104,10 @@ Doctor
 Department of Cool Research
 \end_layout
 
+\begin_layout DefenceDate
+2016
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include

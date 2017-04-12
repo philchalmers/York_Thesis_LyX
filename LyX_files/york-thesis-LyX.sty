@@ -1,5 +1,10 @@
 %========  Custom commands for LyX. DO NOT EDIT OR DELETE THIS FILE!! ========
 
+\newcommand{\defencemonth}[1]{\gdef\@defencemonth{#1}}%
+\let\@defencemonth\@empty
+\newcommand{\defenceyear}[1]{\gdef\@defenceyear{#1}}%
+\let\@defenceyear\@year
+
 %renew spacing
 %\setlength {\textheight}{\paperheight-2.5in}
 \setlength {\topmargin}{0.0in}
@@ -110,10 +115,10 @@
       YORK UNIVERSITY \\
       TORONTO, ONTARIO \\ 
       \hugeskip 
-      \@date
+      \@defencemonth \ \@defenceyear
       \hugeskip \hugeskip
        %NOTE \the\year may need to be changed if you defended in a different year than you generated your document
-      \textcopyright \, \@author, \the\year
+      \textcopyright \, \@author, \@defenceyear
     \end{center}}
   \newpage }
 

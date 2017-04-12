@@ -79,14 +79,27 @@ Style Author
 	EndFont
 End
 
-Style DefenceDate 
+Style DefenceMonth
 	Category              FrontMatter
-	LatexName             date
+	LatexName             defencemonth
 	LatexType             Command
 	InTitle               1
 	Align                 Center
 	AlignPossible         Left, Right, Center
 	TopSep                0.5
+	BottomSep             0.5
+	Font
+	  Size                Small
+	EndFont
+End
+
+Style DefenceYear 
+	Category              FrontMatter
+	LatexName             defenceyear
+	LatexType             Command
+	InTitle               1
+	Align                 Center
+	AlignPossible         Left, Right, Center
 	BottomSep             0.5
 	Font
 	  Size                Small

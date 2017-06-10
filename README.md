@@ -54,8 +54,7 @@ As well, if you want to go the extra mile (and you should!)
    to LyX's `~/layouts` directory 
      - On Ubuntu, mine was located in `~/home/phil/.lyx/layouts`
      - Windows is probably in `C:/Program Files/LyX/layouts`
-     - Mac is in the application itself (right click on `LyX.app` and go to
-       `"show package contents"`, then inside that `Contents\Resources\layouts`)
+     - On Mac OS X, it is preferred to place this file in `~/Library/Application\ Support/LyX-2.2/layouts` (note: the Library directory is hidden by default in recent versions of OS X. Use the "Go To Folder" shortcut, Command+Shift+G, to navigate there quickly).
 - Open the LyX program and go to `'Tools -> Reconfigure'`. Now restart LyX.
 
 Finally, pat yourself on the back because it should work now LyX! You can open `.lyx` files 
